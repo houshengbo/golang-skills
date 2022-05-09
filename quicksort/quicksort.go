@@ -23,7 +23,6 @@ func partition(arr []int) ([]int, int) {
 	left, right := 0, len(arr)-1
 	arr[pivot], arr[right] = arr[right], arr[pivot]
 
-	//for j, _ := range arr {
 	for j := left; j < right; j++ {
 		if arr[j] < arr[right] {
 			// Swap the value at left(larger than pivot) with the value at j(smaller than pivot)
